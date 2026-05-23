@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Ishak | CR7 كريستيانو رونالدو</title>
+    <!-- Favicon and External Libraries -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyjdZ5QDGMEI7bz7JiaUPLuT1rbCSBiX01A&s" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           1. نظام المتغيرات والألوان الكاريزمية المتقدمة (Charismatic CSS Variables)
+           ========================================================================== */
+        :root {
+            --primary-gold: #d4af37;
+            --dark-gold: #b5952f;
+            --charisma-crimson: #e60026;
+            --charisma-glow-red: rgba(230, 0, 38, 0.45);
+            --charisma-glow-gold: rgba(212, 175, 55, 0.45);
+            --glass-bg: rgba(10, 10, 10, 0.65);
+            --glass-border: rgba(212, 175, 55, 0.15);
+            --glass-border-crimson: rgba(230, 0, 38, 0.2);
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --dark-bg: #030303;
+            --card-dark: rgba(20, 20, 20, 0.85);
+            --luxury-purple: #32004f;
+            --premium-gradient: linear-gradient(135deg, #120104 0%, #050505 50%, #0d0a01 100%);
+            --gold-gradient: linear-gradient(135deg, #ffe066 0%, #d4af37 50%, #8a6f27 100%);
+            --crimson-gradient: linear-gradient(135deg, #ff4d6d 0%, #c9184a 50%, #590d22 100%);
+            --gold-red-gradient: linear-gradient(90deg, #d4af37 0%, #e60026 100%);
+        }
+
+        /* ==========================================================================
+           2. إعادة تعيين وتنسيق الصفحة الرئيسي (Global & Base Styles)
+           ========================================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(5,5,5,0.98)), 
+                              url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg');
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.7;
+            padding-top: 80px; /* لإفساح المجال للهيدر العائم */
+        }
+
+        /* شريط تقدم القراءة في الأعلى */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold-red-gradient);
+            width: 0%;
+            z-index: 10000;
+            transition: width 0.1s ease;
+        }
+
+        /* تحسين مظهر شريط التمرير */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, var(--primary-gold), var(--charisma-crimson));
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-gold);
+        }
+
+        /* ==========================================================================
+           3. أنيميشن وحركات مخصصة فائقة الفخامة (Keyframes & Animations)
+           ========================================================================== */
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-60px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(60px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            0% { opacity: 0; transform: translateX(50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes glowPulseGold {
+            0% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.15), inset 0 0 5px rgba(212, 175, 55, 0.05); }
+            50% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.45), inset 0 0 15px rgba(212, 175, 55, 0.15); }
+            100% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.15), inset 0 0 5px rgba(212, 175, 55, 0.05); }
+        }
+
+        @keyframes glowPulseCrimson {
+            0% { box-shadow: 0 0 10px rgba(230, 0, 38, 0.15); }
+            50% { box-shadow: 0 0 25px rgba(230, 0, 38, 0.45); }
+            100% { box-shadow: 0 0 10px rgba(230, 0, 38, 0.15); }
+        }
+
+        @keyframes textGradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatingEffect {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulseScale {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* ==========================================================================
+           4. الهيدر العائم وشريط التنقل المتقدم (Floating Header & Navigation)
+           ========================================================================== */
+        .navbar {
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            max-width: 1400px;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 12px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9999;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .navbar.scrolled {
+            top: 0;
+            width: 100%;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            background: rgba(5, 5, 5, 0.96);
+            padding: 15px 5%;
+        }
+
+        .nav-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gold-red-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            letter-spacing: 3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-red-gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-btn-contact {
+            background: var(--gold-red-gradient);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(230,0,38,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn-contact:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           5. الحاوية والتنسيقات الهيكلية للموقع (Layout Containers & Elements)
+           ========================================================================== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 70px;
+            animation: fadeInDown 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ffe066, #d4af37, #ff1e56, #d4af37);
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradientShift 6s ease infinite;
+            letter-spacing: 6px;
+            text-shadow: 0px 10px 30px rgba(0,0,0,0.9);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* ==========================================================================
+           6. لوحات الزجاج المورفية المتقدمة (Advanced Glassmorphism Panels)
+           ========================================================================== */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px) saturate(160%);
+            -webkit-backdrop-filter: blur(25px) saturate(160%);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 45px 35px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.7), inset 0 1px 1px rgba(255,255,255,0.05);
+            animation: fadeInUp 1.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        /* إشعاعات زجاجية كاريزمية عشوائية في زوايا البانل */
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .glass-panel::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(230,0,38,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .section-title {
+            font-size: 2.6rem;
+            color: var(--primary-gold);
+            border-bottom: 3px solid var(--dark-gold);
+            padding-bottom: 12px;
+            margin-bottom: 40px;
+            display: inline-block;
+            position: relative;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            width: 50%;
+            height: 3px;
+            background: var(--charisma-crimson);
+        }
+
+        /* ==========================================================================
+           7. شبكة المعلومات الشخصية (Personal Info Grid Styles)
+           ========================================================================== */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .info-item {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 25px;
+            border-radius: 20px;
+            border-right: 5px solid var(--primary-gold);
+            border-left: 1px solid rgba(255,255,255,0.02);
+            border-top: 1px solid rgba(255,255,255,0.02);
+            border-bottom: 1px solid rgba(255,255,255,0.02);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        /* كلاس مميز للمعلومات الشخصية التي تحمل سمات "الكاريزما والكارير" */
+        .info-item.charisma-style {
+            border-right-color: var(--charisma-crimson);
+            background: linear-gradient(135deg, rgba(230,0,38,0.05) 0%, rgba(0,0,0,0.85) 100%);
+        }
+
+        .info-item:hover {
+            background: rgba(212, 175, 55, 0.08);
+            transform: translateX(-12px) translateY(-5px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
+            border-left-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .info-item.charisma-style:hover {
+            background: rgba(230, 0, 38, 0.08);
+            box-shadow: 0 15px 30px rgba(230, 0, 38, 0.15);
+            border-left-color: rgba(230, 0, 38, 0.3);
+        }
+
+        .info-item h3 {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-item h3 i {
+            color: var(--primary-gold);
+        }
+
+        .info-item.charisma-style h3 i {
+            color: var(--charisma-crimson);
+        }
+
+        .info-item p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .info-item .detail-sub {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+
+        /* ==========================================================================
+           8. شبكة الأندية المتقدمة (3D & Dynamic Club Cards)
+           ========================================================================== */
+        .clubs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 40px;
+        }
+
+        .club-card {
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-bottom: 4px solid #1a1a1a;
+            border-radius: 24px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+        }
+
+        .club-card:hover {
+            transform: translateY(-20px) scale(1.04);
+            border-color: var(--primary-gold);
+            border-bottom: 4px solid var(--charisma-crimson);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.9), 0 0 35px rgba(212, 175, 55, 0.25);
+        }
+
+        .club-img-wrapper {
+            width: 100%;
+            height: 270px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .club-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .club-card:hover .club-img-wrapper img {
+            transform: scale(1.18);
+        }
+
+        .club-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(to top, rgba(15,15,15,1) 0%, rgba(15,15,15,0.7) 40%, transparent 100%);
+        }
+
+        /* حاوية الشعار لكل نادي تحت اسم النادي */
+        .club-logo-container {
+            width: 75px;
+            height: 75px;
+            margin: -45px auto 15px auto;
+            position: relative;
+            z-index: 5;
+            background: rgba(15, 15, 15, 0.95);
+            border: 2px solid var(--primary-gold);
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8), 0 0 15px rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+
+        .club-card:hover .club-logo-container {
+            transform: scale(1.15) rotate(360deg);
+            border-color: var(--charisma-crimson);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8), 0 0 20px rgba(230, 0, 38, 0.45);
+        }
+
+        .club-logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .club-content {
+            padding: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .club-name {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            margin-bottom: 5px;
+            font-weight: 800;
+        }
+
+        .club-age {
+            background: var(--gold-red-gradient);
+            color: #fff;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 12px;
+            box-shadow: 0 5px 15px rgba(230, 0, 38, 0.2);
+        }
+
+        .club-years {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0,0,0,0.6);
+            padding: 18px 12px;
+            border-radius: 16px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.03);
+            transition: all 0.3s ease;
+        }
+
+        .club-card:hover .stats-row {
+            background: rgba(20,20,20,0.9);
+            border-color: rgba(212, 175, 55, 0.15);
+        }
+
+        .stat-col {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+        }
+
+        .stat-col:not(:last-child) {
+            border-left: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .stat-val { 
+            font-size: 1.8rem; 
+            font-weight: 900; 
+            color: #fff; 
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        
+        .club-card:hover .stat-val {
+            color: var(--primary-gold);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .stat-name { 
+            font-size: 0.85rem; 
+            color: var(--text-muted); 
+            margin-top: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* ==========================================================================
+           9. الأوسمة والبطولات الفردية والجوائز (Trophies & Awards Grid)
+           ========================================================================== */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .award-card {
+            background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(0,0,0,0.75) 100%);
+            border: 1px solid var(--dark-gold);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: glowPulseGold 4s infinite ease-in-out;
+            position: relative;
+        }
+
+        .award-card:nth-child(even) {
+            background: linear-gradient(135deg, rgba(230,0,38,0.08) 0%, rgba(0,0,0,0.75) 100%);
+            border-color: var(--charisma-crimson);
+            animation: glowPulseCrimson 4s infinite ease-in-out;
+        }
+
+        .award-card:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(212,175,55,0.3);
+            border-color: #fff;
+        }
+
+        .award-icon {
+            font-size: 3.8rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .award-card:hover .award-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .award-card h3 { 
+            font-size: 1.3rem; 
+            margin-bottom: 8px; 
+            color: var(--text-main); 
+            font-weight: 800;
+        }
+        
+        .award-card p { 
+            font-size: 1.7rem; 
+            font-weight: 900; 
+            color: var(--primary-gold); 
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* ==========================================================================
+           10. العداد الرقمي للأهداف (Dynamic Interactive Counter)
+           ========================================================================== */
+        .counter-section {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        
+        .counter-box {
+            display: inline-block;
+            background: rgba(10, 10, 10, 0.85);
+            border: 3px solid var(--primary-gold);
+            border-image: linear-gradient(135deg, var(--primary-gold), var(--charisma-crimson)) 1;
+            border-radius: 24px;
+            padding: 35px 70px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .counter-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent);
+            pointer-events: none;
+        }
+
+        .counter-label {
+            font-size: 1.7rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .counter-label i {
+            color: var(--charisma-crimson);
+            margin-left: 8px;
+            animation: pulseScale 1.5s infinite;
+        }
+
+        .digital-counter {
+            font-size: 7rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            background: linear-gradient(to right, #ffffff, var(--primary-gold), var(--charisma-crimson));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 35px rgba(212, 175, 55, 0.4);
+            line-height: 1;
+            letter-spacing: 5px;
+        }
+
+        /* ==========================================================================
+           11. الممتلكات الفاخرة (Assets Grid & Luxury Styling)
+           ========================================================================== */
+        .assets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .asset-card {
+            position: relative;
+            border-radius: 25px;
+            overflow: hidden;
+            height: 320px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .asset-card:hover {
+            transform: scale(1.06) translateY(-5px);
+            box-shadow: 0 25px 45px rgba(230, 0, 38, 0.3), 0 0 20px rgba(212, 175, 55, 0.2);
+            border-color: var(--primary-gold);
+            z-index: 5;
+        }
+
+        .asset-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .asset-card:hover img {
+            transform: scale(1.2);
+        }
+
+        .asset-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 60%, transparent 100%);
+            transition: all 0.3s ease;
+        }
+
+        .asset-title {
+            color: var(--primary-gold);
+            font-size: 1.7rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .asset-price {
+            color: #fff;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        /* ==========================================================================
+           12. سक्सन الأرقام المكسورة والارتقاء والسرعة (Broken Records & Attributes)
+           ========================================================================== */
+        .records-section {
+            background: linear-gradient(135deg, rgba(20,0,4,0.7) 0%, rgba(0,0,0,0.9) 100%);
+            border: 1px solid var(--glass-border-crimson);
+        }
+
+        .records-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .record-card {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: right;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .record-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gold-red-gradient);
+            transition: width 0.3s ease;
+        }
+
+        .record-card:hover::before {
+            width: 8px;
+        }
+
+        .record-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(230,0,38,0.2);
+            border-color: rgba(230,0,38,0.3);
+            background: rgba(18, 5, 8, 0.9);
+        }
+
+        .record-icon-wrapper {
+            font-size: 2.8rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .record-icon-wrapper i {
+            background: var(--gold-red-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .record-badge {
+            font-size: 0.8rem;
+            background: rgba(212,175,55,0.15);
+            color: var(--primary-gold);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            border: 1px solid var(--glass-border);
+        }
+
+        .record-card:nth-child(even) .record-badge {
+            background: rgba(230,0,38,0.15);
+            color: var(--charisma-crimson);
+            border-color: rgba(230,0,38,0.2);
+        }
+
+        .record-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .record-value {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            margin-bottom: 12px;
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+
+        .record-card:hover .record-value {
+            background: var(--gold-red-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .record-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ==========================================================================
+           13. قسم مخصص للألقاب التفاعلية (Interactive Trophies Filter Cabinet)
+           ========================================================================== */
+        .trophy-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .trophy-tab-btn {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-muted);
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trophy-tab-btn:hover {
+            color: #fff;
+            background: rgba(212,175,55,0.1);
+            border-color: var(--primary-gold);
+        }
+
+        .trophy-tab-btn.active {
+            background: var(--gold-red-gradient);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 5px 20px rgba(230,0,38,0.3);
+        }
+
+        .trophy-items-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .trophy-item-card {
+            background: rgba(5,5,5,0.8);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 18px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .trophy-item-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-gold);
+            background: rgba(15,15,15,0.9);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .trophy-item-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+        }
+
+        .trophy-item-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .trophy-item-count {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--charisma-crimson);
+        }
+
+        /* ==========================================================================
+           14. الخط الزمني التفاعلي لمسيرة الأسطورة (Interactive Career Timeline)
+           ========================================================================== */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 50px auto 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--gold-red-gradient);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: transparent;
+            width: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--dark-bg);
+            border: 4px solid var(--primary-gold);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-container.left {
+            left: 0;
+        }
+
+        .timeline-container.right {
+            left: 50%;
+        }
+
+        .timeline-container.right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 25px;
+            background: rgba(15,15,15,0.8);
+            position: relative;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            transition: all 0.4s ease;
+        }
+
+        .timeline-container:hover .timeline-content {
+            transform: scale(1.03);
+            border-color: var(--charisma-crimson);
+            box-shadow: 0 15px 30px rgba(230,0,38,0.2);
+        }
+
+        .timeline-container:hover::after {
+            background-color: var(--charisma-crimson);
+            border-color: #fff;
+            transform: scale(1.3);
+        }
+
+        .timeline-date {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .timeline-body {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ==========================================================================
+           15. كويز رونالدو التفاعلي (Interactive Knowledge Quiz Section)
+           ========================================================================== */
+        .quiz-container {
+            background: linear-gradient(135deg, rgba(20,20,20,0.9) 0%, rgba(10,10,10,0.95) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            padding: 35px;
+            margin-top: 50px;
+        }
+
+        .quiz-question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 25px;
+            border-right: 4px solid var(--primary-gold);
+            padding-right: 15px;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .quiz-option-btn {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 15px;
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: right;
+        }
+
+        .quiz-option-btn:hover {
+            background: rgba(212,175,55,0.1);
+            border-color: var(--primary-gold);
+        }
+
+        .quiz-option-btn.correct {
+            background: rgba(46, 204, 113, 0.2);
+            border-color: #2ecc71;
+            color: #2ecc71;
+        }
+
+        .quiz-option-btn.wrong {
+            background: rgba(231, 76, 60, 0.2);
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
+
+        .quiz-feedback {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 15px;
+            min-height: 30px;
+        }
+
+        /* ==========================================================================
+           16. تصميم قسم الفوتر المطور (Charismatic Luxury Footer Section)
+           ========================================================================== */
+        footer {
+            background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(5,5,5,0.9) 100%);
+            border-top: 4px solid var(--primary-gold);
+            border-image: linear-gradient(90deg, var(--primary-gold), var(--charisma-crimson)) 1;
+            border-radius: 40px 40px 0 0;
+            padding: 70px 20px 40px 20px;
+            text-align: center;
+            margin-top: 80px;
+            box-shadow: 0 -15px 40px rgba(0,0,0,0.8);
+            position: relative;
+        }
+
+        .footer-quote {
+            font-size: 3rem;
+            color: var(--primary-gold);
+            font-weight: 900;
+            margin-bottom: 35px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            font-style: italic;
+        }
+
+        .developer-section {
+            display: inline-block;
+            background: rgba(255,255,255,0.02);
+            padding: 25px 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .developer-section p {
+            color: var(--text-muted);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .dev-link {
+            color: var(--primary-gold);
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.4s ease;
+        }
+
+        .dev-link:hover {
+            color: #fff;
+            text-shadow: 0 0 25px var(--primary-gold), 0 0 15px var(--charisma-crimson);
+            transform: translateY(-5px);
+        }
+
+        /* ==========================================================================
+           17. تصميم متوافق كلياً مع جميع الشاشات (Super Responsive Web Design)
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            header h1 { font-size: 4.5rem; }
+            .timeline::after { left: 40px; }
+            .timeline-container { width: 100%; padding-left: 80px; padding-right: 25px; }
+            .timeline-container.right { left: 0; }
+            .timeline-container::after { left: 30px; right: auto; }
+            .timeline-container.right::after { left: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 70px; }
+            .navbar { padding: 10px 20px; }
+            .nav-links { display: none; } /* القائمة للهواتف تعمل بالـ JS أو الهامبرغر */
+            .menu-toggle { display: block; }
+            header h1 { font-size: 3.5rem; }
+            header h2 { font-size: 1.3rem; }
+            .section-title { font-size: 2rem; }
+            .digital-counter { font-size: 4.5rem; }
+            .counter-box { padding: 25px 40px; }
+            .footer-quote { font-size: 2rem; }
+            .developer-section { padding: 20px 30px; }
+            .dev-link { font-size: 1.7rem; }
+        }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 2.8rem; letter-spacing: 2px; }
+            header h2 { font-size: 1.1rem; }
+            .digital-counter { font-size: 3.5rem; }
+            .counter-box { padding: 18px 25px; }
+            .section-title { font-size: 1.7rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .clubs-grid { grid-template-columns: 1fr; }
+            .award-card p { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط تقدم القراءة عالي الدقة -->
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <!-- شريط التنقل العلوي العائم والكاريزمي -->
+    <nav class="navbar" id="mainNavbar">
+        <a href="#" class="nav-logo">
+            <i class="fa-solid fa-crown"></i> CR7 CHAMP
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">الرئيسية</a></li>
+            <li><a href="#personal-info">المعلومات الشخصية</a></li>
+            <li><a href="#physical-records">السوبر مان والأرقام</a></li>
+            <li><a href="#clubs">الأندية والمسيرة</a></li>
+            <li><a href="#international">المسيرة الدولية</a></li>
+            <li><a href="#awards">الجوائز والبطولات</a></li>
+            <li><a href="#empire">الامبراطورية والثروة</a></li>
+        </ul>
+        <a href="#quiz-sec" class="nav-btn-contact">تحدي كويز رونالدو</a>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        
+        <!-- الهيدر الرئيسي الفاخر -->
+        <header>
+            <h1>CR7</h1>
+            <h2>ملف أسطورة كرة القدم | الأرقام لا تكذب</h2>
+        </header>
+
+        <!-- قسم العداد الرقمي للأهداف مع التفاعل والأنيميشن -->
+        <div class="counter-section">
+            <div class="counter-box">
+                <div class="counter-label"><i class="fa-solid fa-futbol"></i> إجمالي الأهداف الرسمية</div>
+                <div class="digital-counter" id="goal-counter">0</div>
+            </div>
+        </div>
+
+        <!-- أولاً: قسم المعلومات الشخصية -->
+        <div class="glass-panel" id="personal-info">
+            <h2 class="section-title"><i class="fa-solid fa-address-card"></i> المعلومات الشخصية</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-user"></i> الاسم الكامل</h3>
+                    <p>كريستيانو رونالدو دوس سانتوس أفيرو</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-cake-candles"></i> تاريخ الميلاد / السن</h3>
+                    <p>5 فبراير 1985 (41 عاماً)</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-earth-americas"></i> البلد</h3>
+                    <p>البرتغال (ماديرا)</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-arrows-up-down"></i> الطول / الوزن</h3>
+                    <p>1.87 متر / 83 كجم</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-shoe-prints"></i> المركز المفضل</h3>
+                    <p>مهاجم صريح / جناح أيسر</p>
+                </div>
+                <div class="info-item charisma-style">
+                    <h3><i class="fa-solid fa-people-roof"></i> عائلته</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">
+                        شريكته: جورجينا رودريغيز<br>
+                        أبناؤه: جونيور، ماتيو، إيفا، ألانا، بيلا<br>
+                        والدته: ماريا دولوريس
+                    </p>
+                </div>
+                <div class="info-item charisma-style">
+                    <h3><i class="fa-solid fa-user-group"></i> أصدقاؤه المقربون في الملاعب</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">
+                        مارسيلو، بيبي، ريكاردو كواريسما، إيدو أغيري
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ثانياً: قسم السوبرمان والأرقام المكسورة (Broken Records) - جديد ومتقدم جداً -->
+        <div class="glass-panel records-section" id="physical-records">
+            <h2 class="section-title"><i class="fa-solid fa-bolt"></i> الأرقام القياسية والتاريخية المحطمة</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">أبرز الإنجازات الفيزيائية والأرقام القياسية الاستثنائية التي كسر بها رونالدو القوانين الطبيعية المعتادة في عالم الرياضة:</p>
+            
+            <div class="records-grid">
+                
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-arrows-up-to-line"></i>
+                        <span class="record-badge">الارتقاء الأعلى ضد مانشستر</span>
+                    </div>
+                    <div>
+                        <div class="record-title">الارتقاء الأسطوري (ريال مدريد ضد مانشستر يونايتد 2013)</div>
+                        <div class="record-value">2.93 متر</div>
+                        <p class="record-desc">أحد أعلى الارتقاءات المسجلة للاعب كرة قدم، حيث حلق في الهواء متجاوزاً عارضة المرمى ليسجل رأسية تاريخية في شباك فريقه السابق.</p>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span class="record-badge">تحدي الجاذبية ضد سامبدوريا</span>
+                    </div>
+                    <div>
+                        <div class="record-title">ارتقاء سامبدوريا الشهير (يوفنتوس 2019)</div>
+                        <div class="record-value">2.56 متر</div>
+                        <p class="record-desc">ارتقاء بقوة دفع هائلة، وبقي معلقاً في الهواء لمدة 0.92 ثانية متفوقاً على جميع المدافعين، ليدهش مدربي الجاذبية والفيزياء.</p>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span class="record-badge">أقصى سرعة انطلاق</span>
+                    </div>
+                    <div>
+                        <div class="record-title">أسرع انطلاقة للاعب في كأس العالم (2018)</div>
+                        <div class="record-value">38.6 كم / س</div>
+                        <p class="record-desc">سجل في مونديال روسيا 2018 ضد إسبانيا سرعة خارقة تفوق سرعات كبار العدائين، كأسرع لاعب في تاريخ البطولة وهو بسن الـ 33.</p>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span class="record-badge">الهداف التاريخي المطلق</span>
+                    </div>
+                    <div>
+                        <div class="record-title">الهداف التاريخي لكرة القدم في المباريات الرسمية</div>
+                        <div class="record-value">973 هدف</div>
+                        <p class="record-desc">الرقم القياسي المطلق المسجل رسمياً بالفيفا كأكثر من أحرز أهدافاً في تاريخ كرة القدم على مر العصور وما زال العداد مستمراً.</p>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-earth-europe"></i>
+                        <span class="record-badge">الهداف الدولي التاريخي</span>
+                    </div>
+                    <div>
+                        <div class="record-title">الهداف التاريخي للمنتخبات الوطنية في كرة القدم</div>
+                        <div class="record-value">143 هدف</div>
+                        <p class="record-desc">سجلها مع المنتخب البرتغالي متجاوزاً جميع مهاجمي العالم في التاريخ كأكثر مسجل للأهداف الدولية بقمصان المنتخبات.</p>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <div class="record-icon-wrapper">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="record-badge">سيد التشامبيونز ليغ</span>
+                    </div>
+                    <div>
+                        <div class="record-title">الهداف التاريخي لدوري أبطال أوروبا</div>
+                        <div class="record-value">140 هدف</div>
+                        <p class="record-desc">أقوى هداف ومصنع للعب في تاريخ البطولة الأغلى للأندية، وهو الأكثر خوضاً للقاءات وصاحب أكبر عدد أهداف بموسم واحد (17 هدف).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ثالثاً: رحلة الأندية مع وضع الشعارات تحت أسماء الأندية بدقة -->
+        <div class="glass-panel" id="clubs">
+            <h2 class="section-title"><i class="fa-solid fa-shirt"></i> رحلة الأندية (تاريخ الانتقالات)</h2>
+            <div class="clubs-grid">
+                
+                <!-- سبورتنج لشبونة -->
+                <div class="club-card">
+                    <div class="club-img-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZqHHBREkNEe0lcZ0HG6nPdtfi9taRBe8Qw&s" alt="رونالدو لشبونة">
+                        <div class="club-img-overlay"></div>
+                    </div>
+                    <div class="club-logo-container">
+                        <img src="data:image/png;base64,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" alt="Sporting CP Logo">
+                    </div>
+                    <div class="club-content">
+                        <h3 class="club-name">سبورتنج لشبونة</h3>
+                        <div class="club-age">السن: 17 - 18 عاماً</div>
+                        <span class="club-years">(2002 - 2003)</span>
+                        <div class="stats-row">
+                            <div class="stat-col">
+                                <span class="stat-val">5</span>
+                                <span class="stat-name">أهداف</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">31</span>
+                                <span class="stat-name">مباراة</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">1</span>
+                                <span class="stat-name">بطولة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مانشستر يونايتد -->
+                <div class="club-card">
+                    <div class="club-img-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdfHs895odQKAK747GbvLwKhab8LRYRVWuQ&s" alt="رونالدو مانشستر يونايتد">
+                        <div class="club-img-overlay"></div>
+                    </div>
+                    <div class="club-logo-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo">
+                    </div>
+                    <div class="club-content">
+                        <h3 class="club-name">مانشستر يونايتد</h3>
+                        <div class="club-age">السن: 18 - 24 / 36 - 37 عاماً</div>
+                        <span class="club-years">(الفترتين: 2003-2009 / 2021-2022)</span>
+                        <div class="stats-row">
+                            <div class="stat-col">
+                                <span class="stat-val">145</span>
+                                <span class="stat-name">هدف</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">346</span>
+                                <span class="stat-name">مباراة</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">9</span>
+                                <span class="stat-name">بطولات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ريال مدريد -->
+                <div class="club-card">
+                    <div class="club-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/5a/29/6e/5a296e3ecf9fd1a9e9f8768228d2544b.jpg" alt="رونالدو ريال مدريد">
+                        <div class="club-img-overlay"></div>
+                    </div>
+                    <div class="club-logo-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid CF Logo">
+                    </div>
+                    <div class="club-content">
+                        <h3 class="club-name">ريال مدريد</h3>
+                        <div class="club-age">السن: 24 - 33 عاماً</div>
+                        <span class="club-years">(2009 - 2018) | ذروة المجد</span>
+                        <div class="stats-row">
+                            <div class="stat-col">
+                                <span class="stat-val">450</span>
+                                <span class="stat-name">هدف</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">438</span>
+                                <span class="stat-name">مباراة</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">16</span>
+                                <span class="stat-name">بطولة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- يوفنتوس -->
+                <div class="club-card">
+                    <div class="club-img-wrapper">
+                        <img src="https://cdn.elheddaf.com/data/images/flash/thumbs/large-152547%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D9%8A%D8%A7%D9%86%D9%88-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D8%AE%D8%A7%D8%B1%D8%AC-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%81%D9%8A-c54d0.jpg" alt="رونالدو يوفنتوس">
+                        <div class="club-img-overlay"></div>
+                    </div>
+                    <div class="club-logo-container" style="background: white;">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAABi0lEQVRo3mNgGAWjYBQQAv4MPgRhAIMwkg5tJD1+lDvgP1HQFUnHDBQZOjnAEUnHxFEHDDMH+DF4Y4EeDFn0cgAuoD7QDtAZdcCoA0YdMOqAUQeMOmDUAaMOGPEOMESxxp7+DrBFscaK/g4IQbFGB0lmKn0cUINijSiSzCL6OOAYTmt2IIn/pZX1QijWP0aRu4Ek85pWDriC4oBZODtz52lj/RG0nqERkpw4iswK6ltuxPARzfpbKPKJKHKl1LVclGE7lp6xMoqaAyhyJtSzXJphHdaOeSqKKi40WaoVu/twjAvko6mchSK7nhaFLq4qCASk0ORtqRUCT7FYvpeBBUPdcxQVz6kX/85olr/A6rcDaKo8qJn+D8ONfc8QjlXFfjTrT1I3A7JAi9xgrLJcDA8wooid2gWQFYMbDpkILCnEgl4jyWIMZ7BYH0Yfy5kYZmPNnEH0sb4DR9mgT3ur2dBafcgpn5k+vk/Han0MA13BFBTLpzAMAOCBNj8XAVkDBkSAcBSMglFAEQAAno3fPEUrIlwAAAAASUVORK5CYII=" alt="Juventus Logo">
+                    </div>
+                    <div class="club-content">
+                        <h3 class="club-name">يوفنتوس</h3>
+                        <div class="club-age">السن: 33 - 36 عاماً</div>
+                        <span class="club-years">(2018 - 2021)</span>
+                        <div class="stats-row">
+                            <div class="stat-col">
+                                <span class="stat-val">101</span>
+                                <span class="stat-name">هدف</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">134</span>
+                                <span class="stat-name">مباراة</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">5</span>
+                                <span class="stat-name">بطولات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- النصر السعودي -->
+                <div class="club-card">
+                    <div class="club-img-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lzJQDyzwZl6I3u7v4nWK2vads-cdRkNgiQ&s" alt="رونالدو النصر">
+                        <div class="club-img-overlay"></div>
+                    </div>
+                    <div class="club-logo-container">
+                        <img src="data:image/png;base64,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" alt="Al Nassr FC Logo">
+                    </div>
+                    <div class="club-content">
+                        <h3 class="club-name">النصر السعودي</h3>
+                        <div class="club-age">السن: 37 عاماً - حتى الآن</div>
+                        <span class="club-years">(2023 - 2026)</span>
+                        <div class="stats-row">
+                            <div class="stat-col">
+                                <span class="stat-val">64+</span>
+                                <span class="stat-name">هدف</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">70+</span>
+                                <span class="stat-name">مباراة</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-val">1</span>
+                                <span class="stat-name">بطولة عربية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- رابعاً: الخط الزمني لرحلة رونالدو (Interactive Transfer Timeline) -->
+        <div class="glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-timeline"></i> المحطات الأسطورية والخط الزمني</h2>
+            <div class="timeline">
+                
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2002 - 2003</span>
+                        <h3 class="timeline-title">الظهور الأول المذهل مع سبورتنج لشبونة</h3>
+                        <p class="timeline-body">تأسس في البرتغال ولفت نظر الأسطورة السير أليكس فيرغسون بفضل مهاراته ومراوغاته السريعة في مباراة ودية تاريخية.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2003 - 2009</span>
+                        <h3 class="timeline-title">التطور الفني والجلاد الذهبي مع مانشستر يونايتد</h3>
+                        <p class="timeline-body">تلقى القميص الأسطوري رقم 7، فاز بـ 3 دوري إنجليزي متتالي، دوري أبطال أوروبا والكرة الذهبية الأولى بمسيرته عام 2008.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2009 - 2018</span>
+                        <h3 class="timeline-title">ذروة المجد الرياضي والهيمنة التاريخية بقميص ريال مدريد</h3>
+                        <p class="timeline-body">انتقال قياسي قيمته 94 مليون يورو، أصبح الهداف التاريخي للريال بـ 450 هدف وتوج بـ 4 بطولات دوري أبطال أوروبا و4 كرات ذهبية إضافية.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2021</span>
+                        <h3 class="timeline-title">تحد جديد وإخضاع الكالتشيو مع يوفنتوس</h3>
+                        <p class="timeline-body">رحلة جديدة في إيطاليا بصفقة تجاوزت الـ 100 مليون يورو، فاز بالدوري والجوائز الفردية، وحقق الهداف التاريخي للنادي برقم قياسي مذهل وسريع.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3 class="timeline-title">العودة العاطفية إلى مسرح الأحلام</h3>
+                        <p class="timeline-body">عاد لمانشستر يونايتد لينهي قصة الوفاء والتعلق بعشاق النادي الإنجليزي في فترة صعبة أثبت فيها قدرته الاستثنائية على قيادة الهجوم.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2026</span>
+                        <h3 class="timeline-title">قيادة ثورة كرة القدم العالمية مع النصر السعودي</h3>
+                        <p class="timeline-body">عقد هو الأكبر في تاريخ الرياضة بـ 200 مليون يورو سنوياً، قاد الفريق للفوز بالبطولة العربية وصناعة تاريخ رياضي سعودي جديد كلياً وجذب نجوم العالم للمسابقة.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- خامساً: مسيرة المنتخب البرتغالي بالتفصيل -->
+        <div class="glass-panel" id="international">
+            <h2 class="section-title"><i class="fa-solid fa-flag"></i> مسيرة المنتخب (البرتغال) وكأس العالم</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-futbol"></i> إجمالي الأهداف الدولية</h3>
+                    <p style="color: var(--primary-gold);">130+ هدف (الهداف التاريخي للمنتخبات)</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-ranking-star"></i> إجمالي المباريات الدولية</h3>
+                    <p>200+ مباراة (العميد واللاعب الأكثر خوضاً للقاءات دولية)</p>
+                </div>
+                <div class="info-item charisma-style">
+                    <h3><i class="fa-solid fa-trophy"></i> بطولات المنتخب</h3>
+                    <p>يورو 2016 🏆 <br> دوري الأمم الأوروبية 2019 🏆</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-calendar-check"></i> مشاركاته في كأس العالم</h3>
+                    <p>شارك في 5 نسخ متتالية (2006, 2010, 2014, 2018, 2022)</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-bullseye"></i> أهداف كأس العالم</h3>
+                    <p>8 أهداف (اللاعب الوحيد الذي سجل في 5 نسخ مختلفة)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- سادساً: البطولات الفردية الكبرى والتفاعل التصفوي (Interactive Cabinet Filter) -->
+        <div class="glass-panel" id="awards">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> البطولات والجوائز الكبرى</h2>
+            
+            <div class="trophy-tabs">
+                <button class="trophy-tab-btn active" onclick="filterTrophies('all', this)"><i class="fa-solid fa-border-all"></i> الكل</button>
+                <button class="trophy-tab-btn" onclick="filterTrophies('individual', this)"><i class="fa-solid fa-medal"></i> الفردية الكبرى</button>
+                <button class="trophy-tab-btn" onclick="filterTrophies('club-trophy', this)"><i class="fa-solid fa-trophy"></i> جماعية مع الأندية</button>
+            </div>
+
+            <div class="trophy-items-container" id="trophyContainer">
+                
+                <div class="trophy-item-card" data-category="individual">
+                    <div class="trophy-item-icon">🥇</div>
+                    <div class="trophy-item-title">الكرة الذهبية (Ballon d'Or)</div>
+                    <div class="trophy-item-count">5 مرات</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="individual">
+                    <div class="trophy-item-icon">👟</div>
+                    <div class="trophy-item-title">الحذاء الذهبي الأوروبي</div>
+                    <div class="trophy-item-count">4 مرات</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="individual">
+                    <div class="trophy-item-icon">🌍</div>
+                    <div class="trophy-item-title">جائزة الأفضل (The Best / FIFA)</div>
+                    <div class="trophy-item-count">3 مرات</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="individual">
+                    <div class="trophy-item-icon">⚽</div>
+                    <div class="trophy-item-title">هداف دوري أبطال أوروبا</div>
+                    <div class="trophy-item-count">7 مواسم</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="individual">
+                    <div class="trophy-item-icon">🌟</div>
+                    <div class="trophy-item-title">جائزة بوشكاش (أفضل هدف)</div>
+                    <div class="trophy-item-count">1 (2009)</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="club-trophy">
+                    <div class="trophy-item-icon">🏆</div>
+                    <div class="trophy-item-title">دوري أبطال أوروبا (UCL)</div>
+                    <div class="trophy-item-count">5 بطولات</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="club-trophy">
+                    <div class="trophy-item-icon">🔥</div>
+                    <div class="trophy-item-title">الدوري الإنجليزي الممتاز (EPL)</div>
+                    <div class="trophy-item-count">3 بطولات</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="club-trophy">
+                    <div class="trophy-item-icon">⚽</div>
+                    <div class="trophy-item-title">الدوري الإسباني (La Liga)</div>
+                    <div class="trophy-item-count">بطولتان</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="club-trophy">
+                    <div class="trophy-item-icon">🇮🇹</div>
+                    <div class="trophy-item-title">الدوري الإيطالي (Serie A)</div>
+                    <div class="trophy-item-count">بطولتان</div>
+                </div>
+
+                <div class="trophy-item-card" data-category="club-trophy">
+                    <div class="trophy-item-icon">🇸🇦</div>
+                    <div class="trophy-item-title">كأس العرب للأندية الأبطال</div>
+                    <div class="trophy-item-count">بطولة واحدة</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- سابعاً: إمبراطورية CR7 المالية والشركات -->
+        <div class="glass-panel" id="empire">
+            <h2 class="section-title"><i class="fa-solid fa-sack-dollar"></i> إمبراطورية CR7 (الثروة والأعمال)</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-money-bill-trend-up"></i> إجمالي الثروة التقديرية</h3>
+                    <p style="color: var(--primary-gold);">تخطت 1 مليار دولار</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-coins"></i> راتبه مع النصر السعودي</h3>
+                    <p>200 مليون يورو سنوياً (أغلى عقد في التاريخ)</p>
+                </div>
+                <div class="info-item charisma-style">
+                    <h3><i class="fa-solid fa-building"></i> شركاته وعلامته التجارية</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">فنادق Pestana CR7، عيادات Insparya لزراعة الشعر، مياه Ursu9، ملابس وعطور CR7</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-handshake"></i> عقود الرعاية الأبرز</h3>
+                    <p>Nike (عقد رعاية مدى الحياة)، Binance، Clear</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ثامناً: الممتلكات الفاخرة للأسطورة -->
+        <div class="glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-gem"></i> الممتلكات الفاخرة</h2>
+            <div class="assets-grid">
+                
+                <div class="asset-card">
+                    <img src="https://assets.goal.com/images/v3/blt36a6a257d85813f9/Ronaldo_Cars.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="Bugatti">
+                    <div class="asset-overlay">
+                        <div class="asset-title">أسطول السيارات (بوجاتي)</div>
+                        <div class="asset-price">يمتلك بوجاتي شيرون وسينتوديتشي النادرة (بأكثر من 15 مليون دولار)</div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&q=80" alt="Yacht">
+                    <div class="asset-overlay">
+                        <div class="asset-title">يخت أزيموت جراند</div>
+                        <div class="asset-price">يخت فاخر اشتراه بحوالي 7 مليون دولار لرحلات عائلته الفاخرة</div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80" alt="Island/Mansion">
+                    <div class="asset-overlay">
+                        <div class="asset-title">جزيرة وقصور فارهة</div>
+                        <div class="asset-price">يمتلك جزيرة خاصة في ماديرا وقصوراً في مدريد ولشبونة والرياض</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- تاسعاً: كويز تفاعلي لاختبار معلومات الزوار عن رونالدو (Interactive Trivia Quiz) -->
+        <div class="quiz-container" id="quiz-sec">
+            <h2 class="section-title"><i class="fa-solid fa-circle-question"></i> اختبار معلوماتك | هل أنت عاشق حقيقي لـ CR7؟</h2>
+            <div class="quiz-question" id="quizQuestion">جار تحميل السؤال...</div>
+            <div class="quiz-options" id="quizOptions">
+                <!-- الأزرار تولد ديناميكياً -->
+            </div>
+            <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+    </div>
+
+    <!-- فوتر فاخر فخم لا يحذف أي كود من المطور الأساسي مينا إسحاق -->
+    <footer>
+        <div class="footer-quote">
+            "رونالدو ليس مجرد لاعب.. بل شغف وعشق لا ينتهي."
+        </div>
+        
+        <div class="developer-section">
+            <p>تم التصميم والتطوير بكل فخر بواسطة</p>
+            <a href="https://mina-ishak.github.io/Zero" class="dev-link" target="_blank">
+                <i class="fa-solid fa-code"></i> Mina Ishak
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            /* ==========================================================================
+               1. عداد الأهداف الرقمي التفاعلي (Animated Goals Counter)
+               ========================================================================== */
+            const counterElement = document.getElementById('goal-counter');
+            const targetGoals = 973; // رقم الأهداف الإجمالي المعتمد
+            let currentCount = 0;
+            const duration = 2000; // وقت الحركة الإجمالي بالملي ثانية
+            const increment = Math.ceil(targetGoals / (duration / 20)); 
+
+            const updateCounter = () => {
+                currentCount += increment;
+                if (currentCount < targetGoals) {
+                    counterElement.innerText = currentCount;
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counterElement.innerText = targetGoals;
+                }
+            };
+
+            setTimeout(updateCounter, 400);
+
+            /* ==========================================================================
+               2. شريط تقدم القراءة في أعلى الصفحة (Scroll Progress Bar)
+               ========================================================================== */
+            window.addEventListener('scroll', () => {
+                const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('scrollBar').style.width = scrolled + '%';
+
+                // إضافة تأثير للشريط العائم عند النزول لأسفل (Sticky Navigation)
+                const navbar = document.getElementById('mainNavbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                // تمييز الرابط النشط تلقائياً أثناء التمرير (Active Scroll Highlight)
+                const sections = document.querySelectorAll('div[id], header[id], section[id]');
+                let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+                sections.forEach(section => {
+                    if (scrollPosition >= section.offsetTop - 120 && scrollPosition < section.offsetTop + section.offsetHeight - 120) {
+                        const currentId = section.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-links a[href="#${currentId}"]`);
+                        if (activeLink) {
+                            document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            });
+
+            /* ==========================================================================
+               3. نظام تصفية وعرض البطولات والجوائز (Trophies Cabinet Filtering)
+               ========================================================================== */
+            window.filterTrophies = (category, btn) => {
+                // إزالة الكلاس النشط من جميع أزرار التصفية
+                document.querySelectorAll('.trophy-tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const cards = document.querySelectorAll('.trophy-item-card');
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (category === 'all' || cardCategory === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.85)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            };
+
+            /* ==========================================================================
+               4. اختبار الكويز التفاعلي الذكي (Interactive Trivia Quiz Logic)
+               ========================================================================== */
+            const quizQuestions = [
+                {
+                    q: "كم عدد الكرات الذهبية (Ballon d'Or) التي حصل عليها رونالدو في مسيرته؟",
+                    options: ["3 كرات", "4 كرات", "5 كرات", "6 كرات"],
+                    answer: 2, // "5 كرات"
+                    feedback: "بالفعل! رونالدو فاز بالكرة الذهبية 5 مرات (2008، 2013، 2014، 2016، 2017)."
+                },
+                {
+                    q: "ما هو النادي الذي سجل معه كريستيانو رونالدو أكبر عدد من الأهداف في مسيرته؟",
+                    options: ["مانشستر يونايتد", "ريال مدريد", "يوفنتوس", "النصر السعودي"],
+                    answer: 1, // "ريال مدريد"
+                    feedback: "صحيح! سجل مع ريال مدريد 450 هدفاً في 438 مباراة فقط كأعظم معدل تهديفي بالتاريخ."
+                },
+                {
+                    q: "كم هدفاً سجل الأسطورة بقميص السيدة العجوز (يوفنتوس الإيطالي)؟",
+                    options: ["50 هدف", "101 هدف", "145 هدف", "85 هدف"],
+                    answer: 1, // "101 هدف"
+                    feedback: "رائع! سجل 101 هدف وحقق بطولتي كالتشيو خلال 3 مواسم خارقة بقميص يوفنتوس."
+                },
+                {
+                    q: "أي من هذه الأرقام الفيزيائية يمثل ارتقاء رونالدو الشهير ضد سامبدوريا؟",
+                    options: ["2.20 متر", "2.56 متر", "2.93 متر", "2.10 متر"],
+                    answer: 1, // "2.56 متر"
+                    feedback: "عبقري! ارتقاء سامبدوريا كان على ارتفاع 2.56 متر وظل طائراً لمدة 0.92 ثانية كاملة."
+                }
+            ];
+
+            let currentQuestionIndex = 0;
+
+            const loadQuestion = () => {
+                const qData = quizQuestions[currentQuestionIndex];
+                const qEl = document.getElementById('quizQuestion');
+                const optContainer = document.getElementById('quizOptions');
+                const feedbackEl = document.getElementById('quizFeedback');
+
+                feedbackEl.innerText = "";
+                qEl.innerText = `سؤال ${currentQuestionIndex + 1}: ${qData.q}`;
+                optContainer.innerHTML = "";
+
+                qData.options.forEach((opt, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'quiz-option-btn';
+                    btn.innerText = opt;
+                    btn.onclick = () => selectAnswer(idx, btn);
+                    optContainer.appendChild(btn);
+                });
+            };
+
+            const selectAnswer = (selectedIndex, clickedBtn) => {
+                const qData = quizQuestions[currentQuestionIndex];
+                const feedbackEl = document.getElementById('quizFeedback');
+                const buttons = document.querySelectorAll('.quiz-option-btn');
+
+                // قفل كل الأزرار عشان ما يختار مرتين
+                buttons.forEach(btn => btn.disabled = true);
+
+                if (selectedIndex === qData.answer) {
+                    clickedBtn.classList.add('correct');
+                    feedbackEl.style.color = "#2ecc71";
+                    feedbackEl.innerText = "✓ إجابة صحيحة! " + qData.feedback;
+                } else {
+                    clickedBtn.classList.add('wrong');
+                    buttons[qData.answer].classList.add('correct');
+                    feedbackEl.style.color = "#e74c3c";
+                    feedbackEl.innerText = "✗ إجابة خاطئة! " + qData.feedback;
+                }
+
+                // الانتقال للسؤال التالي بعد 3 ثواني
+                setTimeout(() => {
+                    currentQuestionIndex = (currentQuestionIndex + 1) % quizQuestions.length;
+                    loadQuestion();
+                }, 4000);
+            };
+
+            loadQuestion();
+
+            /* ==========================================================================
+               5. قائمة الهاتف المحمول المستجيبة (Mobile Responsive Menu Toggle)
+               ========================================================================== */
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            menuToggle.addEventListener('click', () => {
+                if (navLinks.style.display === 'flex') {
+                    navLinks.style.display = 'none';
+                } else {
+                    navLinks.style.display = 'flex';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.width = '100%';
+                    navLinks.style.marginTop = '15px';
+                    navLinks.style.gap = '15px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
