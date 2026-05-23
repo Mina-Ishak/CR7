@@ -6,6 +6,7 @@
     <title>Mina Ishak | CR7 كريستيانو رونالدو</title>
     <!-- Favicon and External Libraries -->
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyjdZ5QDGMEI7bz7JiaUPLuT1rbCSBiX01A&s" type="image/png">
+    <meta name="google-site-verification" content="RaQVexghntk7_6oHdT1jcTRvPvkfQQAVosZnRnVvPvM" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -18,15 +19,15 @@
             --charisma-crimson: #e60026;
             --charisma-glow-red: rgba(230, 0, 38, 0.45);
             --charisma-glow-gold: rgba(212, 175, 55, 0.45);
-            --glass-bg: rgba(10, 10, 10, 0.65);
+            --glass-bg: rgba(10, 10, 10, 0.75);
             --glass-border: rgba(212, 175, 55, 0.15);
-            --glass-border-crimson: rgba(230, 0, 38, 0.2);
+            --glass-border-crimson: rgba(230, 0, 38, 0.25);
             --text-main: #ffffff;
-            --text-muted: #b3b3b3;
+            --text-muted: #cccccc;
             --dark-bg: #030303;
-            --card-dark: rgba(20, 20, 20, 0.85);
-            --luxury-purple: #32004f;
-            --premium-gradient: linear-gradient(135deg, #120104 0%, #050505 50%, #0d0a01 100%);
+            --card-dark: rgba(18, 18, 18, 0.9);
+            --luxury-purple: #1f0129;
+            --premium-gradient: linear-gradient(135deg, #0f0103 0%, #050505 50%, #0a0801 100%);
             --gold-gradient: linear-gradient(135deg, #ffe066 0%, #d4af37 50%, #8a6f27 100%);
             --crimson-gradient: linear-gradient(135deg, #ff4d6d 0%, #c9184a 50%, #590d22 100%);
             --gold-red-gradient: linear-gradient(90deg, #d4af37 0%, #e60026 100%);
@@ -46,15 +47,15 @@
 
         body {
             background-color: var(--dark-bg);
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(5,5,5,0.98)), 
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.88), rgba(5,5,5,0.99)), 
                               url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg');
             background-size: cover;
             background-position: top center;
             background-attachment: fixed;
             color: var(--text-main);
             overflow-x: hidden;
-            line-height: 1.7;
-            padding-top: 80px; /* لإفساح المجال للهيدر العائم */
+            line-height: 1.6;
+            padding-top: 100px; /* لإفساح المجال للهيدر العائم المتناسق */
         }
 
         /* شريط تقدم القراءة في الأعلى */
@@ -71,14 +72,14 @@
 
         /* تحسين مظهر شريط التمرير */
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #050505;
+            background: #030303;
         }
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(to bottom, var(--primary-gold), var(--charisma-crimson));
-            border-radius: 5px;
+            border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary-gold);
@@ -88,34 +89,34 @@
            3. أنيميشن وحركات مخصصة فائقة الفخامة (Keyframes & Animations)
            ========================================================================== */
         @keyframes fadeInDown {
-            0% { opacity: 0; transform: translateY(-60px) scale(0.95); }
+            0% { opacity: 0; transform: translateY(-40px) scale(0.98); }
             100% { opacity: 1; transform: translateY(0) scale(1); }
         }
 
         @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(60px); }
+            0% { opacity: 0; transform: translateY(40px); }
             100% { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInLeft {
-            0% { opacity: 0; transform: translateX(-50px); }
+            0% { opacity: 0; transform: translateX(-30px); }
             100% { opacity: 1; transform: translateX(0); }
         }
 
         @keyframes fadeInRight {
-            0% { opacity: 0; transform: translateX(50px); }
+            0% { opacity: 0; transform: translateX(30px); }
             100% { opacity: 1; transform: translateX(0); }
         }
 
         @keyframes glowPulseGold {
             0% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.15), inset 0 0 5px rgba(212, 175, 55, 0.05); }
-            50% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.45), inset 0 0 15px rgba(212, 175, 55, 0.15); }
+            50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.35), inset 0 0 10px rgba(212, 175, 55, 0.12); }
             100% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.15), inset 0 0 5px rgba(212, 175, 55, 0.05); }
         }
 
         @keyframes glowPulseCrimson {
             0% { box-shadow: 0 0 10px rgba(230, 0, 38, 0.15); }
-            50% { box-shadow: 0 0 25px rgba(230, 0, 38, 0.45); }
+            50% { box-shadow: 0 0 20px rgba(230, 0, 38, 0.35); }
             100% { box-shadow: 0 0 10px rgba(230, 0, 38, 0.15); }
         }
 
@@ -125,12 +126,6 @@
             100% { background-position: 0% 50%; }
         }
 
-        @keyframes floatingEffect {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
         @keyframes pulseScale {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
@@ -138,26 +133,27 @@
         }
 
         /* ==========================================================================
-           4. الهيدر العائم وشريط التنقل المتقدم (Floating Header & Navigation)
+           4. شريط التنقل العلوي المطور (Refined Compact Navbar)
            ========================================================================== */
         .navbar {
             position: fixed;
             top: 15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 92%;
+            width: 95%;
             max-width: 1400px;
-            background: rgba(10, 10, 10, 0.85);
-            backdrop-filter: blur(20px);
+            background: rgba(8, 8, 8, 0.9);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
-            border-radius: 50px;
-            padding: 12px 35px;
+            border-radius: 40px;
+            padding: 10px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 9999;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1);
-            transition: all 0.4s ease;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.85);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .navbar.scrolled {
@@ -166,53 +162,59 @@
             border-radius: 0;
             border-left: none;
             border-right: none;
-            background: rgba(5, 5, 5, 0.96);
-            padding: 15px 5%;
+            border-top: none;
+            background: rgba(4, 4, 4, 0.98);
+            padding: 12px 4%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.9);
         }
 
         .nav-logo {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 900;
             background: var(--gold-red-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             transition: transform 0.3s ease;
         }
 
         .nav-logo:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 15px;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 600;
             transition: all 0.3s ease;
             position: relative;
-            padding: 5px 0;
+            padding: 6px 10px;
+            border-radius: 20px;
         }
 
         .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255, 255, 255, 0.03);
         }
 
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 2px;
             background: var(--gold-red-gradient);
@@ -220,30 +222,33 @@
         }
 
         .nav-links a:hover::after, .nav-links a.active::after {
-            width: 100%;
+            width: 60%;
         }
 
         .nav-btn-contact {
             background: var(--gold-red-gradient);
             color: #fff;
-            padding: 10px 24px;
-            border-radius: 30px;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.85rem;
             font-weight: bold;
             text-decoration: none;
             box-shadow: 0 4px 15px rgba(230,0,38,0.3);
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .nav-btn-contact:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.4);
         }
 
         .menu-toggle {
             display: none;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--text-main);
             cursor: pointer;
+            padding: 5px;
         }
 
         /* ==========================================================================
@@ -252,32 +257,32 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
             animation: fadeInDown 1.3s cubic-bezier(0.16, 1, 0.3, 1);
             position: relative;
         }
 
         header h1 {
-            font-size: 6rem;
+            font-size: 4.5rem;
             font-weight: 900;
             background: linear-gradient(90deg, #ffe066, #d4af37, #ff1e56, #d4af37);
             background-size: 300% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: textGradientShift 6s ease infinite;
-            letter-spacing: 6px;
-            text-shadow: 0px 10px 30px rgba(0,0,0,0.9);
-            margin-bottom: 15px;
+            letter-spacing: 4px;
+            text-shadow: 0px 8px 25px rgba(0,0,0,0.9);
+            margin-bottom: 10px;
             display: inline-block;
         }
 
         header h2 {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             color: var(--text-muted);
             font-weight: 300;
             letter-spacing: 1px;
@@ -291,16 +296,15 @@
             backdrop-filter: blur(25px) saturate(160%);
             -webkit-backdrop-filter: blur(25px) saturate(160%);
             border: 1px solid var(--glass-border);
-            border-radius: 30px;
-            padding: 45px 35px;
-            margin-bottom: 60px;
+            border-radius: 25px;
+            padding: 35px 25px;
+            margin-bottom: 50px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.7), inset 0 1px 1px rgba(255,255,255,0.05);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.7), inset 0 1px 1px rgba(255,255,255,0.05);
             animation: fadeInUp 1.3s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
 
-        /* إشعاعات زجاجية كاريزمية عشوائية في زوايا البانل */
         .glass-panel::before {
             content: '';
             position: absolute;
@@ -308,7 +312,7 @@
             left: -50px;
             width: 150px;
             height: 150px;
-            background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -319,16 +323,16 @@
             right: -50px;
             width: 150px;
             height: 150px;
-            background: radial-gradient(circle, rgba(230,0,38,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(230,0,38,0.08) 0%, transparent 70%);
             pointer-events: none;
         }
 
         .section-title {
-            font-size: 2.6rem;
+            font-size: 1.8rem;
             color: var(--primary-gold);
             border-bottom: 3px solid var(--dark-gold);
-            padding-bottom: 12px;
-            margin-bottom: 40px;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
             display: inline-block;
             position: relative;
             font-weight: 800;
@@ -339,7 +343,7 @@
             position: absolute;
             bottom: -3px;
             right: 0;
-            width: 50%;
+            width: 40%;
             height: 3px;
             background: var(--charisma-crimson);
         }
@@ -349,14 +353,14 @@
            ========================================================================== */
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .info-item {
             background: rgba(0, 0, 0, 0.65);
-            padding: 25px;
-            border-radius: 20px;
+            padding: 20px;
+            border-radius: 18px;
             border-right: 5px solid var(--primary-gold);
             border-left: 1px solid rgba(255,255,255,0.02);
             border-top: 1px solid rgba(255,255,255,0.02);
@@ -364,35 +368,34 @@
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
         }
 
-        /* كلاس مميز للمعلومات الشخصية التي تحمل سمات "الكاريزما والكارير" */
         .info-item.charisma-style {
             border-right-color: var(--charisma-crimson);
-            background: linear-gradient(135deg, rgba(230,0,38,0.05) 0%, rgba(0,0,0,0.85) 100%);
+            background: linear-gradient(135deg, rgba(230,0,38,0.04) 0%, rgba(0,0,0,0.85) 100%);
         }
 
         .info-item:hover {
             background: rgba(212, 175, 55, 0.08);
-            transform: translateX(-12px) translateY(-5px);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
-            border-left-color: rgba(212, 175, 55, 0.3);
+            transform: translateX(-8px) translateY(-3px);
+            box-shadow: 0 12px 25px rgba(212, 175, 55, 0.15);
+            border-left-color: rgba(212, 175, 55, 0.25);
         }
 
         .info-item.charisma-style:hover {
             background: rgba(230, 0, 38, 0.08);
-            box-shadow: 0 15px 30px rgba(230, 0, 38, 0.15);
-            border-left-color: rgba(230, 0, 38, 0.3);
+            box-shadow: 0 12px 25px rgba(230, 0, 38, 0.15);
+            border-left-color: rgba(230, 0, 38, 0.25);
         }
 
         .info-item h3 {
             color: var(--text-muted);
-            font-size: 1.05rem;
-            margin-bottom: 8px;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .info-item h3 i {
@@ -404,17 +407,17 @@
         }
 
         .info-item p {
-            font-size: 1.3rem;
+            font-size: 1.05rem;
             font-weight: bold;
             color: #fff;
         }
 
         .info-item .detail-sub {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            margin-top: 5px;
+            margin-top: 4px;
             font-weight: normal;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         /* ==========================================================================
@@ -422,34 +425,34 @@
            ========================================================================== */
         .clubs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
         .club-card {
-            background: rgba(15, 15, 15, 0.85);
+            background: rgba(12, 12, 12, 0.9);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.03);
             border-bottom: 4px solid #1a1a1a;
-            border-radius: 24px;
+            border-radius: 20px;
             overflow: hidden;
             text-align: center;
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
             transform-style: preserve-3d;
             perspective: 1000px;
-            box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
         }
 
         .club-card:hover {
-            transform: translateY(-20px) scale(1.04);
+            transform: translateY(-12px) scale(1.03);
             border-color: var(--primary-gold);
             border-bottom: 4px solid var(--charisma-crimson);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.9), 0 0 35px rgba(212, 175, 55, 0.25);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.85), 0 0 25px rgba(212, 175, 55, 0.2);
         }
 
         .club-img-wrapper {
             width: 100%;
-            height: 270px;
+            height: 220px;
             overflow: hidden;
             position: relative;
         }
@@ -459,11 +462,11 @@
             height: 100%;
             object-fit: cover;
             object-position: top;
-            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .club-card:hover .club-img-wrapper img {
-            transform: scale(1.18);
+            transform: scale(1.12);
         }
 
         .club-img-overlay {
@@ -472,31 +475,31 @@
             left: 0;
             width: 100%;
             height: 60%;
-            background: linear-gradient(to top, rgba(15,15,15,1) 0%, rgba(15,15,15,0.7) 40%, transparent 100%);
+            background: linear-gradient(to top, rgba(12,12,12,1) 0%, rgba(12,12,12,0.6) 50%, transparent 100%);
         }
 
         /* حاوية الشعار لكل نادي تحت اسم النادي */
         .club-logo-container {
-            width: 75px;
-            height: 75px;
-            margin: -45px auto 15px auto;
+            width: 65px;
+            height: 65px;
+            margin: -35px auto 12px auto;
             position: relative;
             z-index: 5;
-            background: rgba(15, 15, 15, 0.95);
+            background: rgba(12, 12, 12, 0.95);
             border: 2px solid var(--primary-gold);
             border-radius: 50%;
-            padding: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.8), 0 0 15px rgba(212, 175, 55, 0.3);
+            padding: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8), 0 0 12px rgba(212, 175, 55, 0.25);
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.5s ease;
+            transition: all 0.4s ease;
         }
 
         .club-card:hover .club-logo-container {
-            transform: scale(1.15) rotate(360deg);
+            transform: scale(1.1) rotate(360deg);
             border-color: var(--charisma-crimson);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.8), 0 0 20px rgba(230, 0, 38, 0.45);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8), 0 0 15px rgba(230, 0, 38, 0.35);
         }
 
         .club-logo-container img {
@@ -506,13 +509,13 @@
         }
 
         .club-content {
-            padding: 25px;
+            padding: 20px;
             position: relative;
             z-index: 2;
         }
 
         .club-name {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--primary-gold);
             margin-bottom: 5px;
             font-weight: 800;
@@ -521,36 +524,30 @@
         .club-age {
             background: var(--gold-red-gradient);
             color: #fff;
-            padding: 5px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
             font-weight: bold;
             display: inline-block;
-            margin-bottom: 12px;
-            box-shadow: 0 5px 15px rgba(230, 0, 38, 0.2);
+            margin-bottom: 10px;
+            box-shadow: 0 3px 10px rgba(230, 0, 38, 0.15);
         }
 
         .club-years {
             color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
             display: block;
         }
 
         .stats-row {
             display: flex;
             justify-content: space-between;
-            background: rgba(0,0,0,0.6);
-            padding: 18px 12px;
-            border-radius: 16px;
-            margin-top: 20px;
-            border: 1px solid rgba(255,255,255,0.03);
-            transition: all 0.3s ease;
-        }
-
-        .club-card:hover .stats-row {
-            background: rgba(20,20,20,0.9);
-            border-color: rgba(212, 175, 55, 0.15);
+            background: rgba(0,0,0,0.55);
+            padding: 12px 8px;
+            border-radius: 12px;
+            margin-top: 15px;
+            border: 1px solid rgba(255,255,255,0.02);
         }
 
         .stat-col {
@@ -561,26 +558,25 @@
         }
 
         .stat-col:not(:last-child) {
-            border-left: 1px solid rgba(255,255,255,0.08);
+            border-left: 1px solid rgba(255,255,255,0.06);
         }
 
         .stat-val { 
-            font-size: 1.8rem; 
+            font-size: 1.4rem; 
             font-weight: 900; 
             color: #fff; 
             font-family: 'Courier New', Courier, monospace;
-            text-shadow: 0 0 10px rgba(255,255,255,0.1);
         }
         
         .club-card:hover .stat-val {
             color: var(--primary-gold);
-            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
         }
 
         .stat-name { 
-            font-size: 0.85rem; 
+            font-size: 0.75rem; 
             color: var(--text-muted); 
-            margin-top: 4px;
+            margin-top: 2px;
             font-weight: 600;
             text-transform: uppercase;
         }
@@ -590,56 +586,48 @@
            ========================================================================== */
         .awards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
         }
 
         .award-card {
-            background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(0,0,0,0.75) 100%);
+            background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(0,0,0,0.7) 100%);
             border: 1px solid var(--dark-gold);
-            border-radius: 20px;
-            padding: 30px 20px;
+            border-radius: 18px;
+            padding: 25px 15px;
             text-align: center;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             animation: glowPulseGold 4s infinite ease-in-out;
-            position: relative;
         }
 
         .award-card:nth-child(even) {
-            background: linear-gradient(135deg, rgba(230,0,38,0.08) 0%, rgba(0,0,0,0.75) 100%);
+            background: linear-gradient(135deg, rgba(230,0,38,0.06) 0%, rgba(0,0,0,0.7) 100%);
             border-color: var(--charisma-crimson);
             animation: glowPulseCrimson 4s infinite ease-in-out;
         }
 
         .award-card:hover {
-            transform: translateY(-12px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(212,175,55,0.3);
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(212,175,55,0.25);
             border-color: #fff;
         }
 
         .award-icon {
-            font-size: 3.8rem;
-            margin-bottom: 15px;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .award-card:hover .award-icon {
-            transform: scale(1.2) rotate(10deg);
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
 
         .award-card h3 { 
-            font-size: 1.3rem; 
-            margin-bottom: 8px; 
+            font-size: 1.05rem; 
+            margin-bottom: 6px; 
             color: var(--text-main); 
             font-weight: 800;
         }
         
         .award-card p { 
-            font-size: 1.7rem; 
+            font-size: 1.3rem; 
             font-weight: 900; 
             color: var(--primary-gold); 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         /* ==========================================================================
@@ -647,55 +635,45 @@
            ========================================================================== */
         .counter-section {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             animation: fadeInUp 1.2s ease-out;
         }
         
         .counter-box {
             display: inline-block;
             background: rgba(10, 10, 10, 0.85);
-            border: 3px solid var(--primary-gold);
+            border: 2px solid var(--primary-gold);
             border-image: linear-gradient(135deg, var(--primary-gold), var(--charisma-crimson)) 1;
-            border-radius: 24px;
-            padding: 35px 70px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.2);
-            position: relative;
-        }
-
-        .counter-box::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent);
-            pointer-events: none;
+            border-radius: 20px;
+            padding: 25px 50px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 20px rgba(212, 175, 55, 0.15);
         }
 
         .counter-label {
-            font-size: 1.7rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             font-weight: 700;
         }
 
         .counter-label i {
             color: var(--charisma-crimson);
-            margin-left: 8px;
-            animation: pulseScale 1.5s infinite;
+            margin-left: 6px;
         }
 
         .digital-counter {
-            font-size: 7rem;
+            font-size: 4.5rem;
             font-weight: 900;
             color: var(--primary-gold);
             background: linear-gradient(to right, #ffffff, var(--primary-gold), var(--charisma-crimson));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: 'Courier New', Courier, monospace;
-            text-shadow: 0 0 35px rgba(212, 175, 55, 0.4);
+            text-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
             line-height: 1;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
         }
 
         /* ==========================================================================
@@ -703,36 +681,35 @@
            ========================================================================== */
         .assets-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
 
         .asset-card {
             position: relative;
-            border-radius: 25px;
+            border-radius: 20px;
             overflow: hidden;
-            height: 320px;
+            height: 270px;
             border: 1px solid var(--glass-border);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.6);
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .asset-card:hover {
-            transform: scale(1.06) translateY(-5px);
-            box-shadow: 0 25px 45px rgba(230, 0, 38, 0.3), 0 0 20px rgba(212, 175, 55, 0.2);
+            transform: scale(1.04) translateY(-4px);
+            box-shadow: 0 18px 35px rgba(230, 0, 38, 0.25);
             border-color: var(--primary-gold);
-            z-index: 5;
         }
 
         .asset-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .asset-card:hover img {
-            transform: scale(1.2);
+            transform: scale(1.12);
         }
 
         .asset-overlay {
@@ -740,28 +717,25 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 30px;
-            background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 60%, transparent 100%);
-            transition: all 0.3s ease;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 60%, transparent 100%);
         }
 
         .asset-title {
             color: var(--primary-gold);
-            font-size: 1.7rem;
+            font-size: 1.35rem;
             font-weight: 800;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 6px;
         }
 
         .asset-price {
             color: #fff;
-            font-size: 1.15rem;
-            line-height: 1.5;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            font-size: 0.95rem;
+            line-height: 1.4;
         }
 
         /* ==========================================================================
-           12. سक्सन الأرقام المكسورة والارتقاء والسرعة (Broken Records & Attributes)
+           12. سكشن الأرقام المكسورة والارتقاء والسرعة (Broken Records & Attributes)
            ========================================================================== */
         .records-section {
             background: linear-gradient(135deg, rgba(20,0,4,0.7) 0%, rgba(0,0,0,0.9) 100%);
@@ -770,15 +744,15 @@
 
         .records-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
 
         .record-card {
             background: rgba(10, 10, 10, 0.8);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 20px;
-            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.04);
+            border-radius: 18px;
+            padding: 25px;
             text-align: right;
             position: relative;
             overflow: hidden;
@@ -800,20 +774,20 @@
         }
 
         .record-card:hover::before {
-            width: 8px;
+            width: 6px;
         }
 
         .record-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(230,0,38,0.2);
-            border-color: rgba(230,0,38,0.3);
-            background: rgba(18, 5, 8, 0.9);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(230,0,38,0.15);
+            border-color: rgba(230,0,38,0.25);
+            background: rgba(15, 4, 7, 0.95);
         }
 
         .record-icon-wrapper {
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             color: var(--primary-gold);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -826,34 +800,33 @@
         }
 
         .record-badge {
-            font-size: 0.8rem;
-            background: rgba(212,175,55,0.15);
+            font-size: 0.75rem;
+            background: rgba(212,175,55,0.12);
             color: var(--primary-gold);
-            padding: 4px 10px;
-            border-radius: 12px;
+            padding: 3px 8px;
+            border-radius: 10px;
             font-weight: bold;
             border: 1px solid var(--glass-border);
         }
 
         .record-card:nth-child(even) .record-badge {
-            background: rgba(230,0,38,0.15);
+            background: rgba(230,0,38,0.12);
             color: var(--charisma-crimson);
-            border-color: rgba(230,0,38,0.2);
+            border-color: rgba(230,0,38,0.15);
         }
 
         .record-title {
-            font-size: 1.35rem;
+            font-size: 1.1rem;
             font-weight: 800;
             color: #fff;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .record-value {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 900;
             color: var(--primary-gold);
-            margin-bottom: 12px;
-            font-family: 'Segoe UI', sans-serif;
+            margin-bottom: 10px;
             letter-spacing: -0.5px;
             line-height: 1.1;
         }
@@ -865,9 +838,9 @@
         }
 
         .record-desc {
-            font-size: 1rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* ==========================================================================
@@ -876,29 +849,29 @@
         .trophy-tabs {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 35px;
+            gap: 10px;
+            margin-bottom: 30px;
             flex-wrap: wrap;
         }
 
         .trophy-tab-btn {
             background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.08);
             color: var(--text-muted);
-            padding: 12px 28px;
-            border-radius: 30px;
-            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.85rem;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .trophy-tab-btn:hover {
             color: #fff;
-            background: rgba(212,175,55,0.1);
+            background: rgba(212,175,55,0.08);
             border-color: var(--primary-gold);
         }
 
@@ -906,184 +879,173 @@
             background: var(--gold-red-gradient);
             color: #fff;
             border-color: transparent;
-            box-shadow: 0 5px 20px rgba(230,0,38,0.3);
+            box-shadow: 0 4px 15px rgba(230,0,38,0.25);
         }
 
         .trophy-items-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            transition: all 0.5s ease-in-out;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
         }
 
         .trophy-item-card {
             background: rgba(5,5,5,0.8);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 18px;
-            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.04);
+            border-radius: 15px;
+            padding: 20px;
             text-align: center;
             transition: all 0.4s ease;
         }
 
         .trophy-item-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             border-color: var(--primary-gold);
-            background: rgba(15,15,15,0.9);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            background: rgba(12,12,12,0.9);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
         }
 
         .trophy-item-icon {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: var(--primary-gold);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .trophy-item-title {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #fff;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .trophy-item-count {
-            font-size: 1.6rem;
+            font-size: 1.35rem;
             font-weight: 800;
             color: var(--charisma-crimson);
         }
 
         /* ==========================================================================
-           14. الخط الزمني التفاعلي لمسيرة الأسطورة (Interactive Career Timeline)
+           14. الخط الزمني التفاعلي والمنظم لرحلة الأسطورة (Fixed RTL Timeline)
            ========================================================================== */
         .timeline {
             position: relative;
-            max-width: 1200px;
-            margin: 50px auto 0 auto;
-            padding: 20px 0;
+            max-width: 1000px;
+            margin: 40px auto 0 auto;
+            padding: 15px 0;
         }
 
+        /* خط عمودي من اليمين متناسق تماماً */
         .timeline::after {
             content: '';
             position: absolute;
-            width: 4px;
+            width: 3px;
             background: var(--gold-red-gradient);
             top: 0;
             bottom: 0;
-            left: 50%;
-            margin-left: -2px;
+            right: 25px; /* RTL محاذاة لليمين */
             border-radius: 2px;
         }
 
         .timeline-container {
-            padding: 10px 40px;
+            padding: 10px 50px 10px 0; /* مسافة فارغة من اليمين لتفادي التداخل مع الخط */
             position: relative;
             background-color: transparent;
-            width: 50%;
+            width: 100%;
             transition: all 0.3s ease;
         }
 
+        /* النقاط الدائرية المضيئة الموازية للخط تماماً */
         .timeline-container::after {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
+            width: 14px;
+            height: 14px;
+            right: 19px; /* متمركز بدقة فوق الخط 25px */
             background-color: var(--dark-bg);
-            border: 4px solid var(--primary-gold);
-            top: 15px;
+            border: 3px solid var(--primary-gold);
+            top: 22px;
             border-radius: 50%;
-            z-index: 1;
+            z-index: 2;
             transition: all 0.3s ease;
-        }
-
-        .timeline-container.left {
-            left: 0;
-        }
-
-        .timeline-container.right {
-            left: 50%;
-        }
-
-        .timeline-container.right::after {
-            left: -10px;
+            box-shadow: 0 0 10px var(--primary-gold);
         }
 
         .timeline-content {
-            padding: 25px;
-            background: rgba(15,15,15,0.8);
+            padding: 20px;
+            background: rgba(12, 12, 12, 0.85);
             position: relative;
-            border-radius: 20px;
+            border-radius: 18px;
             border: 1px solid var(--glass-border);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
             transition: all 0.4s ease;
         }
 
         .timeline-container:hover .timeline-content {
-            transform: scale(1.03);
+            transform: scale(1.02);
             border-color: var(--charisma-crimson);
-            box-shadow: 0 15px 30px rgba(230,0,38,0.2);
+            box-shadow: 0 12px 25px rgba(230,0,38,0.2);
         }
 
         .timeline-container:hover::after {
             background-color: var(--charisma-crimson);
             border-color: #fff;
-            transform: scale(1.3);
+            transform: scale(1.2);
         }
 
         .timeline-date {
-            font-size: 1.2rem;
+            font-size: 1.05rem;
             font-weight: 900;
             color: var(--primary-gold);
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             display: inline-block;
         }
 
         .timeline-title {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 800;
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .timeline-body {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* ==========================================================================
            15. كويز رونالدو التفاعلي (Interactive Knowledge Quiz Section)
            ========================================================================== */
         .quiz-container {
-            background: linear-gradient(135deg, rgba(20,20,20,0.9) 0%, rgba(10,10,10,0.95) 100%);
+            background: linear-gradient(135deg, rgba(15,15,15,0.95) 0%, rgba(5,5,5,0.98) 100%);
             border: 1px solid var(--glass-border);
-            border-radius: 25px;
-            padding: 35px;
-            margin-top: 50px;
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-top: 40px;
         }
 
         .quiz-question {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: bold;
             color: #fff;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             border-right: 4px solid var(--primary-gold);
-            padding-right: 15px;
+            padding-right: 12px;
         }
 
         .quiz-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            margin-bottom: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 20px;
         }
 
         .quiz-option-btn {
             background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 15px;
-            padding: 15px;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 12px;
             color: #fff;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -1091,27 +1053,64 @@
         }
 
         .quiz-option-btn:hover {
-            background: rgba(212,175,55,0.1);
+            background: rgba(212,175,55,0.08);
             border-color: var(--primary-gold);
         }
 
         .quiz-option-btn.correct {
-            background: rgba(46, 204, 113, 0.2);
-            border-color: #2ecc71;
-            color: #2ecc71;
+            background: rgba(46, 204, 113, 0.15) !important;
+            border-color: #2ecc71 !important;
+            color: #2ecc71 !important;
         }
 
         .quiz-option-btn.wrong {
-            background: rgba(231, 76, 60, 0.2);
-            border-color: #e74c3c;
-            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.15) !important;
+            border-color: #e74c3c !important;
+            color: #e74c3c !important;
         }
 
         .quiz-feedback {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: bold;
-            margin-top: 15px;
-            min-height: 30px;
+            margin-top: 10px;
+            min-height: 25px;
+        }
+
+        /* تصميم شاشة النتيجة النهائية */
+        .quiz-result-screen {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quiz-result-score {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            margin-bottom: 10px;
+        }
+
+        .quiz-result-rating {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .quiz-restart-btn {
+            background: var(--gold-red-gradient);
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .quiz-restart-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--charisma-crimson);
         }
 
         /* ==========================================================================
@@ -1121,91 +1120,129 @@
             background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(5,5,5,0.9) 100%);
             border-top: 4px solid var(--primary-gold);
             border-image: linear-gradient(90deg, var(--primary-gold), var(--charisma-crimson)) 1;
-            border-radius: 40px 40px 0 0;
-            padding: 70px 20px 40px 20px;
+            border-radius: 30px 30px 0 0;
+            padding: 50px 20px 30px 20px;
             text-align: center;
-            margin-top: 80px;
-            box-shadow: 0 -15px 40px rgba(0,0,0,0.8);
+            margin-top: 60px;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.8);
             position: relative;
         }
 
         .footer-quote {
-            font-size: 3rem;
+            font-size: 2rem;
             color: var(--primary-gold);
             font-weight: 900;
-            margin-bottom: 35px;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            margin-bottom: 25px;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
             font-style: italic;
         }
 
         .developer-section {
             display: inline-block;
             background: rgba(255,255,255,0.02);
-            padding: 25px 50px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding: 15px 35px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.04);
         }
 
         .developer-section p {
             color: var(--text-muted);
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            margin-bottom: 10px;
         }
 
         .dev-link {
             color: var(--primary-gold);
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             font-weight: 900;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             transition: all 0.4s ease;
         }
 
         .dev-link:hover {
             color: #fff;
-            text-shadow: 0 0 25px var(--primary-gold), 0 0 15px var(--charisma-crimson);
-            transform: translateY(-5px);
+            text-shadow: 0 0 15px var(--primary-gold);
+            transform: translateY(-3px);
         }
 
         /* ==========================================================================
-           17. تصميم متوافق كلياً مع جميع الشاشات (Super Responsive Web Design)
+           17. تصميم متوافق كلياً مع جميع الشاشات (Responsive Web Design)
            ========================================================================== */
-        @media (max-width: 1024px) {
-            header h1 { font-size: 4.5rem; }
-            .timeline::after { left: 40px; }
-            .timeline-container { width: 100%; padding-left: 80px; padding-right: 25px; }
-            .timeline-container.right { left: 0; }
-            .timeline-container::after { left: 30px; right: auto; }
-            .timeline-container.right::after { left: 30px; }
+        @media (max-width: 991px) {
+            header h1 { font-size: 3rem; }
+            header h2 { font-size: 1.1rem; }
+            .section-title { font-size: 1.5rem; }
+            
+            /* تظبيط الهامبرجر في الشاشات اللوحية والمحمولة */
+            .navbar {
+                padding: 10px 20px;
+                width: 94%;
+            }
+            .nav-links {
+                display: none; /* يتم إخفاؤها وافتتاحها بالـ JS كـ قائمة عائمة زجاجية */
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%;
+                background: rgba(6, 6, 6, 0.98);
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+                border: 1px solid var(--glass-border);
+                border-top: none;
+                border-radius: 0 0 25px 25px;
+                flex-direction: column;
+                padding: 20px;
+                gap: 12px;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.95);
+                z-index: 9998;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+                padding: 8px 0;
+                font-size: 0.95rem;
+            }
+            .nav-links a::after {
+                bottom: 0;
+            }
+            .menu-toggle {
+                display: block; /* تفعيل زر الهامبرجر */
+            }
+            .nav-btn-contact {
+                font-size: 0.75rem;
+                padding: 6px 14px;
+            }
         }
 
         @media (max-width: 768px) {
-            body { padding-top: 70px; }
-            .navbar { padding: 10px 20px; }
-            .nav-links { display: none; } /* القائمة للهواتف تعمل بالـ JS أو الهامبرغر */
-            .menu-toggle { display: block; }
-            header h1 { font-size: 3.5rem; }
-            header h2 { font-size: 1.3rem; }
-            .section-title { font-size: 2rem; }
-            .digital-counter { font-size: 4.5rem; }
-            .counter-box { padding: 25px 40px; }
-            .footer-quote { font-size: 2rem; }
-            .developer-section { padding: 20px 30px; }
-            .dev-link { font-size: 1.7rem; }
+            body { padding-top: 90px; }
+            .digital-counter { font-size: 3.5rem; }
+            .counter-box { padding: 20px 30px; }
+            .footer-quote { font-size: 1.5rem; }
+            .developer-section { padding: 12px 20px; }
+            .dev-link { font-size: 1.25rem; }
+            
+            /* الخط الزمني في الهواتف */
+            .timeline::after { right: 15px; }
+            .timeline-container { padding: 10px 35px 10px 0; }
+            .timeline-container::after { right: 10px; top: 22px; }
         }
 
         @media (max-width: 480px) {
-            header h1 { font-size: 2.8rem; letter-spacing: 2px; }
-            header h2 { font-size: 1.1rem; }
-            .digital-counter { font-size: 3.5rem; }
-            .counter-box { padding: 18px 25px; }
-            .section-title { font-size: 1.7rem; }
+            header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+            header h2 { font-size: 0.95rem; }
+            .digital-counter { font-size: 2.8rem; }
+            .counter-box { padding: 15px 20px; }
+            .section-title { font-size: 1.35rem; }
             .info-grid { grid-template-columns: 1fr; }
             .clubs-grid { grid-template-columns: 1fr; }
-            .award-card p { font-size: 1.4rem; }
+            .award-card p { font-size: 1.15rem; }
         }
     </style>
 </head>
@@ -1276,7 +1313,7 @@
                 </div>
                 <div class="info-item charisma-style">
                     <h3><i class="fa-solid fa-people-roof"></i> عائلته</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.6;">
+                    <p style="font-size: 0.95rem; line-height: 1.5;">
                         شريكته: جورجينا رودريغيز<br>
                         أبناؤه: جونيور، ماتيو، إيفا، ألانا، بيلا<br>
                         والدته: ماريا دولوريس
@@ -1284,17 +1321,17 @@
                 </div>
                 <div class="info-item charisma-style">
                     <h3><i class="fa-solid fa-user-group"></i> أصدقاؤه المقربون في الملاعب</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.6;">
+                    <p style="font-size: 0.95rem; line-height: 1.5;">
                         مارسيلو، بيبي، ريكاردو كواريسما، إيدو أغيري
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- ثانياً: قسم السوبرمان والأرقام المكسورة (Broken Records) - جديد ومتقدم جداً -->
+        <!-- ثانياً: قسم السوبرمان والأرقام المكسورة (Broken Records) -->
         <div class="glass-panel records-section" id="physical-records">
             <h2 class="section-title"><i class="fa-solid fa-bolt"></i> الأرقام القياسية والتاريخية المحطمة</h2>
-            <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">أبرز الإنجازات الفيزيائية والأرقام القياسية الاستثنائية التي كسر بها رونالدو القوانين الطبيعية المعتادة في عالم الرياضة:</p>
+            <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem;">أبرز الإنجازات الفيزيائية والأرقام القياسية الاستثنائية التي كسر بها رونالدو القوانين الطبيعية المعتادة في عالم الرياضة:</p>
             
             <div class="records-grid">
                 
@@ -1365,7 +1402,7 @@
                     </div>
                     <div>
                         <div class="record-title">الهداف التاريخي لدوري أبطال أوروبا</div>
-                        <div class="record-value">140 هدف</div>
+                        <div class="record-value">140 goal</div>
                         <p class="record-desc">أقوى هداف ومصنع للعب في تاريخ البطولة الأغلى للأندية، وهو الأكثر خوضاً للقاءات وصاحب أكبر عدد أهداف بموسم واحد (17 هدف).</p>
                     </div>
                 </div>
@@ -1531,12 +1568,12 @@
             </div>
         </div>
 
-        <!-- رابعاً: الخط الزمني لرحلة رونالدو (Interactive Transfer Timeline) -->
+        <!-- رابعاً: الخط الزمني لرحلة رونالدو (RTL Unilateral Timeline) -->
         <div class="glass-panel">
             <h2 class="section-title"><i class="fa-solid fa-timeline"></i> المحطات الأسطورية والخط الزمني</h2>
             <div class="timeline">
                 
-                <div class="timeline-container left">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2002 - 2003</span>
                         <h3 class="timeline-title">الظهور الأول المذهل مع سبورتنج لشبونة</h3>
@@ -1544,7 +1581,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-container right">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2003 - 2009</span>
                         <h3 class="timeline-title">التطور الفني والجلاد الذهبي مع مانشستر يونايتد</h3>
@@ -1552,15 +1589,15 @@
                     </div>
                 </div>
 
-                <div class="timeline-container left">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2009 - 2018</span>
                         <h3 class="timeline-title">ذروة المجد الرياضي والهيمنة التاريخية بقميص ريال مدريد</h3>
-                        <p class="timeline-body">انتقال قياسي قيمته 94 مليون يورو، أصبح الهداف التاريخي للريال بـ 450 هدف وتوج بـ 4 بطولات دوري أبطال أوروبا و4 كرات ذهبية إضافية.</p>
+                        <p class="timeline-body">انتقال قياسي قيمته 94 مليون يورو، أصبح الهداف التاريخي للريال بـ 450 هدف وتوج بـ 4 كرات ذهبية إضافية و4 بطولات دوري أبطال أوروبا.</p>
                     </div>
                 </div>
 
-                <div class="timeline-container right">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2018 - 2021</span>
                         <h3 class="timeline-title">تحد جديد وإخضاع الكالتشيو مع يوفنتوس</h3>
@@ -1568,7 +1605,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-container left">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2021 - 2022</span>
                         <h3 class="timeline-title">العودة العاطفية إلى مسرح الأحلام</h3>
@@ -1576,7 +1613,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-container right">
+                <div class="timeline-container">
                     <div class="timeline-content">
                         <span class="timeline-date">2023 - 2026</span>
                         <h3 class="timeline-title">قيادة ثورة كرة القدم العالمية مع النصر السعودي</h3>
@@ -1703,7 +1740,7 @@
                 </div>
                 <div class="info-item charisma-style">
                     <h3><i class="fa-solid fa-building"></i> شركاته وعلامته التجارية</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.6;">فنادق Pestana CR7، عيادات Insparya لزراعة الشعر، مياه Ursu9، ملابس وعطور CR7</p>
+                    <p style="font-size: 0.95rem; line-height: 1.5;">فنادق Pestana CR7، عيادات Insparya لزراعة الشعر، مياه Ursu9، ملابس وعطور CR7</p>
                 </div>
                 <div class="info-item">
                     <h3><i class="fa-solid fa-handshake"></i> عقود الرعاية الأبرز</h3>
@@ -1747,11 +1784,13 @@
         <!-- تاسعاً: كويز تفاعلي لاختبار معلومات الزوار عن رونالدو (Interactive Trivia Quiz) -->
         <div class="quiz-container" id="quiz-sec">
             <h2 class="section-title"><i class="fa-solid fa-circle-question"></i> اختبار معلوماتك | هل أنت عاشق حقيقي لـ CR7؟</h2>
-            <div class="quiz-question" id="quizQuestion">جار تحميل السؤال...</div>
-            <div class="quiz-options" id="quizOptions">
-                <!-- الأزرار تولد ديناميكياً -->
+            <div id="quiz-body-wrapper">
+                <div class="quiz-question" id="quizQuestion">جار تحميل السؤال...</div>
+                <div class="quiz-options" id="quizOptions">
+                    <!-- الأزرار تولد ديناميكياً -->
+                </div>
+                <div class="quiz-feedback" id="quizFeedback"></div>
             </div>
-            <div class="quiz-feedback" id="quizFeedback"></div>
         </div>
 
     </div>
@@ -1854,36 +1893,56 @@
             };
 
             /* ==========================================================================
-               4. اختبار الكويز التفاعلي الذكي (Interactive Trivia Quiz Logic)
+               4. اختبار الكويز التفاعلي الذكي ذو الـ 5 أسئلة مع عرض النتيجة النهائية (Trivia Quiz Logic)
                ========================================================================== */
             const quizQuestions = [
                 {
                     q: "كم عدد الكرات الذهبية (Ballon d'Or) التي حصل عليها رونالدو في مسيرته؟",
                     options: ["3 كرات", "4 كرات", "5 كرات", "6 كرات"],
                     answer: 2, // "5 كرات"
-                    feedback: "بالفعل! رونالدو فاز بالكرة الذهبية 5 مرات (2008، 2013، 2014، 2016، 2017)."
+                    feedback: "رونالدو توج بالكرة الذهبية 5 مرات (2008، 2013، 2014، 2016، 2017)."
                 },
                 {
                     q: "ما هو النادي الذي سجل معه كريستيانو رونالدو أكبر عدد من الأهداف في مسيرته؟",
                     options: ["مانشستر يونايتد", "ريال مدريد", "يوفنتوس", "النصر السعودي"],
                     answer: 1, // "ريال مدريد"
-                    feedback: "صحيح! سجل مع ريال مدريد 450 هدفاً في 438 مباراة فقط كأعظم معدل تهديفي بالتاريخ."
+                    feedback: "سجل مع ريال مدريد 450 هدفاً في 438 مباراة فقط كأعظم معدل تهديفي بالتاريخ."
                 },
                 {
                     q: "كم هدفاً سجل الأسطورة بقميص السيدة العجوز (يوفنتوس الإيطالي)؟",
                     options: ["50 هدف", "101 هدف", "145 هدف", "85 هدف"],
                     answer: 1, // "101 هدف"
-                    feedback: "رائع! سجل 101 هدف وحقق بطولتي كالتشيو خلال 3 مواسم خارقة بقميص يوفنتوس."
+                    feedback: "سجل 101 هدف وحقق بطولتي كالتشيو خلال 3 مواسم خارقة بقميص يوفنتوس."
                 },
                 {
                     q: "أي من هذه الأرقام الفيزيائية يمثل ارتقاء رونالدو الشهير ضد سامبدوريا؟",
                     options: ["2.20 متر", "2.56 متر", "2.93 متر", "2.10 متر"],
                     answer: 1, // "2.56 متر"
-                    feedback: "عبقري! ارتقاء سامبدوريا كان على ارتفاع 2.56 متر وظل طائراً لمدة 0.92 ثانية كاملة."
+                    feedback: "ارتقاء سامبدوريا كان على ارتفاع 2.56 متر وظل طائراً لمدة 0.92 ثانية كاملة."
+                },
+                {
+                    q: "ما هو المنتخب الوطني الذي يعتبر رونالدو هدافه التاريخي وعميد لاعبيه؟",
+                    options: ["إسبانيا", "البرازيل", "البرتغال", "الأرجنتين"],
+                    answer: 2, // "البرتغال"
+                    feedback: "البرتغال! رونالدو هو هدافهم التاريخي وعميد لاعبي العالم بأكثر من 140 هدف دولي."
                 }
             ];
 
             let currentQuestionIndex = 0;
+            let score = 0;
+
+            const quizWrapper = document.getElementById('quiz-body-wrapper');
+
+            window.restartQuiz = () => {
+                currentQuestionIndex = 0;
+                score = 0;
+                quizWrapper.innerHTML = `
+                    <div class="quiz-question" id="quizQuestion">جار تحميل السؤال...</div>
+                    <div class="quiz-options" id="quizOptions"></div>
+                    <div class="quiz-feedback" id="quizFeedback"></div>
+                `;
+                loadQuestion();
+            };
 
             const loadQuestion = () => {
                 const qData = quizQuestions[currentQuestionIndex];
@@ -1891,17 +1950,18 @@
                 const optContainer = document.getElementById('quizOptions');
                 const feedbackEl = document.getElementById('quizFeedback');
 
-                feedbackEl.innerText = "";
-                qEl.innerText = `سؤال ${currentQuestionIndex + 1}: ${qData.q}`;
-                optContainer.innerHTML = "";
-
-                qData.options.forEach((opt, idx) => {
-                    const btn = document.createElement('button');
-                    btn.className = 'quiz-option-btn';
-                    btn.innerText = opt;
-                    btn.onclick = () => selectAnswer(idx, btn);
-                    optContainer.appendChild(btn);
-                });
+                if (feedbackEl) feedbackEl.innerText = "";
+                if (qEl) qEl.innerText = `سؤال ${currentQuestionIndex + 1} من 5: ${qData.q}`;
+                if (optContainer) {
+                    optContainer.innerHTML = "";
+                    qData.options.forEach((opt, idx) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'quiz-option-btn';
+                        btn.innerText = opt;
+                        btn.onclick = () => selectAnswer(idx, btn);
+                        optContainer.appendChild(btn);
+                    });
+                }
             };
 
             const selectAnswer = (selectedIndex, clickedBtn) => {
@@ -1909,25 +1969,53 @@
                 const feedbackEl = document.getElementById('quizFeedback');
                 const buttons = document.querySelectorAll('.quiz-option-btn');
 
-                // قفل كل الأزرار عشان ما يختار مرتين
                 buttons.forEach(btn => btn.disabled = true);
 
                 if (selectedIndex === qData.answer) {
                     clickedBtn.classList.add('correct');
-                    feedbackEl.style.color = "#2ecc71";
-                    feedbackEl.innerText = "✓ إجابة صحيحة! " + qData.feedback;
+                    if (feedbackEl) {
+                        feedbackEl.style.color = "#2ecc71";
+                        feedbackEl.innerText = "✓ صحيح! " + qData.feedback;
+                    }
+                    score++;
                 } else {
                     clickedBtn.classList.add('wrong');
                     buttons[qData.answer].classList.add('correct');
-                    feedbackEl.style.color = "#e74c3c";
-                    feedbackEl.innerText = "✗ إجابة خاطئة! " + qData.feedback;
+                    if (feedbackEl) {
+                        feedbackEl.style.color = "#e74c3c";
+                        feedbackEl.innerText = "✗ خطأ! " + qData.feedback;
+                    }
                 }
 
-                // الانتقال للسؤال التالي بعد 3 ثواني
                 setTimeout(() => {
-                    currentQuestionIndex = (currentQuestionIndex + 1) % quizQuestions.length;
-                    loadQuestion();
-                }, 4000);
+                    currentQuestionIndex++;
+                    if (currentQuestionIndex < quizQuestions.length) {
+                        loadQuestion();
+                    } else {
+                        showFinalResults();
+                    }
+                }, 3500);
+            };
+
+            const showFinalResults = () => {
+                let ratingText = "";
+                if (score === 5) {
+                    ratingText = "عاشق حقيقي فاجر للأسطورة! 👑🐐 (معلوماتك كاملة ومذهلة)";
+                } else if (score === 4) {
+                    ratingText = "مشجع رائع ومتابع مخلص! ⚽🔥 (أداء ممتاز جداً)";
+                } else if (score === 3) {
+                    ratingText = "أداء جيد، لكن الدون يستحق معرفة أكبر! 👀⚡";
+                } else {
+                    ratingText = "تحتاج إلى مراجعة تاريخ الأسطورة لتصبح حريفاً حقيقياً! 📚";
+                }
+
+                quizWrapper.innerHTML = `
+                    <div class="quiz-result-screen">
+                        <div class="quiz-result-score">النتيجة النهائية: ${score} من 5</div>
+                        <div class="quiz-result-rating">${ratingText}</div>
+                        <button class="quiz-restart-btn" onclick="restartQuiz()"><i class="fa-solid fa-rotate-right"></i> إعادة الاختبار</button>
+                    </div>
+                `;
             };
 
             loadQuestion();
@@ -1938,15 +2026,22 @@
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
 
-            menuToggle.addEventListener('click', () => {
-                if (navLinks.style.display === 'flex') {
-                    navLinks.style.display = 'none';
-                } else {
-                    navLinks.style.display = 'flex';
-                    navLinks.style.flexDirection = 'column';
-                    navLinks.style.width = '100%';
-                    navLinks.style.marginTop = '15px';
-                    navLinks.style.gap = '15px';
+            menuToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+            });
+
+            // إغلاق القائمة المنسدلة بمجرد الضغط على أي رابط
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // إغلاق القائمة عند الضغط في أي مكان خارجها
+            document.addEventListener('click', (e) => {
+                if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
                 }
             });
         });
